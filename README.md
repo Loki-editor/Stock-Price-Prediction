@@ -6,22 +6,40 @@
 To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
+Predicting stock prices is a complex task due to market volatility. Using historical closing prices, we aim to develop a Recurrent Neural Network (RNN) model that can analyze time-series data and generate future price predictions.
 
+## Dataset:
+The dataset consists of historical stock closing prices from trainset.csv and testset.csv. The data is normalized using MinMax scaling, and sequences of 60 past values are used as input features. The model learns patterns from training data to predict upcoming prices, helping traders and investors make informed decisions.
+# Train Dataset
+
+<img width="522" height="427" alt="image" src="https://github.com/user-attachments/assets/e7ce5b7b-c4f4-4f15-af55-428b634a4b78" />
+
+# Test Dataset
+
+<img width="485" height="500" alt="image" src="https://github.com/user-attachments/assets/b66ec12b-bf3e-41c5-a403-fa1ea5f3c390" />
 
 ## Design Steps
 
-### Step 1:
-Write your own steps
+# Step 1:
+Data Collection & Preprocessing: Load historical stock prices, normalize using MinMaxScaler, and create sequences for time-series input.
 
-### Step 2:
+# Step 2:
+Model Design: Build an RNN with two layers, define input/output sizes, and set activation functions.
 
-### Step 3:
+# Step 3:
+Training Process: Train the model using MSE loss and Adam optimizer for 20 epochs with batch-size optimization.
+
+# Step 4:
+Evaluation & Prediction: Test on unseen data, inverse transform predictions, and compare with actual prices.
+
+# Step 5:
+Visualization & Interpretation: Plot training loss and predictions to analyze performance and potential improvements.
 
 
 
 ## Program
-#### Name:
-#### Register Number:
+#### Name: LOKESH S
+#### Register Number: 2122242400079
 Include your code here
 ```Python 
 # Define RNN Model
@@ -77,12 +95,15 @@ for epoch in range(epochs):
 
 ### True Stock Price, Predicted Stock Price vs time
 
-Include your plot here
+<img width="605" height="447" alt="image" src="https://github.com/user-attachments/assets/a8567541-9b9b-4010-8476-b83d38967823" />
+
 
 ### Predictions 
 
-Include the predictions on test data
+<img width="791" height="563" alt="image" src="https://github.com/user-attachments/assets/7627a259-e173-4890-bab0-f7880ce5969f" />
+
+
 
 ## Result
-
+Thus, a Recurrent Neural Network model for stock price prediction has successfully been devoloped successfully.
 
